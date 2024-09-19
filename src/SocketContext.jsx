@@ -8,7 +8,7 @@ export const SocketProvider = ({ children }) => {
     const [connectionKey, setConnectionKey] = useState(0); // Key to force reconnection
 
     useEffect(() => {
-        const newSocket = io('http://localhost:5000'); // Update with your server URL
+        const newSocket = io('https://colaboardbackend.onrender.com/'); // Update with your server URL
         setSocket(newSocket);
 
         return () => {

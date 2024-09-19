@@ -2,7 +2,7 @@ import { selector, useRecoilValueLoadable } from "recoil";
 import { authState, logindetails } from "../Atoms/Login.atom.js";
 import axios from "axios";
 import { logout } from "../Atoms/Login.atom.js";
-const baseUrl = 'http://localhost:5000';
+const baseUrl = 'https://colaboardbackend.onrender.com'
 const loginSelector = selector({
     key: "loginSelector",
     get: async ({ get }) => {
