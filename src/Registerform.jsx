@@ -3,7 +3,7 @@ import { authState } from '../Recoil/Atoms/Login.atom';
 import { useRecoilState } from 'recoil';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
-import styles from "../Styles/register.module.css";
+import styles from "../Styles/Register.module.css"
 
 
 const baseUrl = 'http://localhost:5000';
