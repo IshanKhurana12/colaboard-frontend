@@ -1,5 +1,5 @@
 import React from 'react'
-import Canvas from './canvas.jsx'
+import Canvas from './Canvas.jsx'
 import PopupContainer from './PopupContainer.jsx'
 
 export default function RoomComponent() {
