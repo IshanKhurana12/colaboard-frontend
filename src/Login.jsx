@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useRecoilState, useRecoilValue, useRecoilCallback, useRecoilValueLoadable } from 'recoil';
 import { logindetails, authState } from '../Recoil/Atoms/Login.atom.js';
 import loginSelector from '../Recoil/Selectors/Login.selector.js';
-import styles from '../Styles/login.module.css';
+import styles from '../Styles/Login.module.css';
 import { logoutSelector } from '../Recoil/Selectors/Login.selector.js';
 import { logout } from '../Recoil/Atoms/Login.atom.js';
 import { io } from 'socket.io-client';
