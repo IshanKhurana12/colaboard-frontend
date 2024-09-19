@@ -20,7 +20,7 @@ import {ScrollTrigger} from "gsap/ScrollTrigger";
 import { useGSAP } from '@gsap/react';
 import Home from './Home.jsx';
 import Navbar from './Navbar.jsx';
-import Join from './join.jsx';
+import Join from './Join.jsx';
 import RoomInvite from './RoomInvite.jsx';
 gsap.registerPlugin(ScrollTrigger);
 gsap.registerPlugin(useGSAP);
