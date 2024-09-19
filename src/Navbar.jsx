@@ -15,15 +15,15 @@ export default function Navbar({children}) {
 
     const {contextSafe}=useGSAP({});
 
-    var tl=gsap.timeline();
+  
     const fullref=useRef();
 
 
  
 
-  
+    var tl=gsap.timeline();
     useGSAP(()=>{
-        tl.to("#full",{
+        tl.to(fullref.current,{
             right:0,
             duration:0.2,
             
@@ -79,7 +79,7 @@ export default function Navbar({children}) {
             <nav className={styles.nav}>
             <h2>colaBoard</h2>
             <i onClick={clickmenu} className="ri-menu-line"></i>
-                <div id='full' className={styles.full}>
+                <div id='full' ref={fullref} className={styles.full}>
 
                 <i  onClick={closemenu} className="ri-close-fill"></i>
                   
