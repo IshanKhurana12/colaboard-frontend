@@ -1,0 +1,19 @@
+/* src/Styles/MainLayout.module.css */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Full viewport height */
+  }
+  
+  .navbar {
+    flex-shrink: 0; /* Prevent Navbar from shrinking */
+  }
+  
+  .content {
+    flex: 1; /* Allow content to take up remaining space */
+    overflow-y: auto; /* Enable vertical scrolling */
+    padding: 20px; /* Add some padding around the content */
+    background-color: #f4f4f4; /* Light background color */
+  }
+  

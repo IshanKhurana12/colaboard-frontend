@@ -1,0 +1,31 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #121212; /* Dark background for dark mode */
+    color: #ffffff; /* Light text color */
+  }
+  
+  .button {
+    background-color: #1e1e1e; /* Darker button background */
+    color: #ffffff; /* Light text color */
+    border: 1px solid #333; /* Slightly lighter border */
+    padding: 15px 30px;
+    margin: 10px;
+    border-radius: 5px; /* Rounded corners */
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: #333; /* Darker background on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+  }
+  
+  .button:active {
+    background-color: #444; /* Even darker background when clicked */
+  }
+  

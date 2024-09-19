@@ -1,0 +1,81 @@
+body{
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+
+/* MyCanvas.module.css */
+.container {
+    background-color: #1e1e1e; /* Dark background */
+    color: #f5f5f5; /* Light text color */
+    padding: 30px;
+    border-radius: 12px;
+    max-width: 1000px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button {
+    background-color: #007bff; /* Blue background for button */
+    color: #fff; /* White text */
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-bottom: 20px; /* Space below the button */
+}
+
+.button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: scale(1.05); /* Slight scale effect on hover */
+}
+
+.canvasWrapper {
+  
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center; /* Center align items */
+}
+
+canvas{
+    width: 80%;
+    height: 80%;
+    overflow: hidden;
+}
+
+.canvasItem {
+    background-color: #2c2c2c; /* Slightly lighter dark background for items */
+    border-radius: 12px;
+    padding: 20px;
+    width: calc(33.333% - 20px); /* Three items per row with gap */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.canvasItem:hover {
+    transform: translateY(-5px); /* Slight lift effect on hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); /* Enhanced shadow on hover */
+    border: 1px solid white;
+}
+
+.canvasItem h1 {
+    font-size: 20px;
+    margin-bottom: 8px;
+    font-weight: 600; /* Slightly bolder text */
+}
+
+.canvasItem p {
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+
+.canvasItem img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}

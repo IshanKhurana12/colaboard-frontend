@@ -1,0 +1,23 @@
+
+
+.text{
+    font-size: 30vw;
+    text-transform: uppercase;
+    font-weight:600;
+    color: white;
+}
+
+.page1{
+    background-color: black;
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+   
+}
+
+
+.string{
+    height: 200px;
+    width: 100vw;
+    background-color: rgb(216, 23, 23);
+}
