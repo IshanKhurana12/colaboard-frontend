@@ -6,7 +6,7 @@ import axios from 'axios';
 import styles from "../Styles/Register.module.css"
 
 
-const baseUrl = 'http://localhost:5000';
+const baseUrl = 'https://colaboardbackend.onrender.com'
 
 
 export default function Registerform() {
