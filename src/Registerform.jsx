@@ -5,14 +5,14 @@ import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import styles from "../Styles/Register.module.css"
 
-
+import Loader from './Loader';
 const baseUrl = 'https://colaboardbackend.onrender.com'
 
 
 export default function Registerform() {
     const navigate = useNavigate();
     const [auth] = useRecoilState(authState);
-
+    const [loading,setloading]=useState(false);
     useEffect(()=>{
         if (auth.isAuthenticated) {
             navigate('/');
@@ -29,7 +29,7 @@ export default function Registerform() {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-
+        setloading(true);
         const formData = new FormData();
         formData.append('username', username);
       
@@ -49,7 +49,9 @@ export default function Registerform() {
              
               
                if(response.status===201){
+                setloading(false);
                     navigate('/');
+                    
                } 
             
         } catch (error) {
@@ -58,7 +60,10 @@ export default function Registerform() {
     };
 
     return (
-        <div className={styles.container}>
+        <>
+       
+        {loading ?   <Loader/>
+: <div className={styles.container}>
             <h2 className={styles.title}>Sign In</h2>
             <form onSubmit={handleSubmit} className={styles.form}>
                 <div className={styles.formGroup}>
@@ -113,6 +118,8 @@ export default function Registerform() {
 
                 <button type="submit" className={styles.submitButton}>Sign up</button>
             </form>
-        </div>
+        </div>}
+       
+        </>
     );
 }

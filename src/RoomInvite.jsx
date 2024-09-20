@@ -63,7 +63,7 @@ export default function RoomInvite() {
                     <button className={`${styles.button} ${styles.rejectButton}`} onClick={handleReject}>Reject</button>
                 </>
             ) : (
-                <p>No invites at the moment.</p>
+               <p></p>
             )}
         </div>
     );
